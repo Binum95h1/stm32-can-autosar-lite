@@ -127,7 +127,7 @@ All **six ARM firmware projects built successfully** from the source included he
 | --- | ---: | ---: | ---: | ---: |
 | Main | 19 | 0 | 0 | 19/19 |
 | ABS | 16 | 1 | 0 | 17/17 |
-| Airbag MPU6050 | 31 | 0 | 0 | 31/31 |
+| Airbag | 31 | 0 | 0 | 31/31 |
 | Total | 66 | 1 | 0 | 67/67 |
 
 The ABS `first_seq_nonzero` case is **REVIEW**: the first received sequence value of 7 is counted as seven missing messages. The expected startup convention needs to be agreed before treating this case as a pass.
@@ -142,7 +142,7 @@ The following values were regenerated with the checked-in `-O0` build configurat
 | --- | ---: | ---: | ---: | ---: |
 | Main F103 | 11,120 | 12,887 | 504 | 520 |
 | ABS F103 | 11,664 | 13,000 | 1,920 | 1,936 |
-| Airbag F103 / MPU6050 | 9,246 | 10,239 | 348 | 368 |
+| Airbag F103 | 9,246 | 10,239 | 348 | 368 |
 
 These are compiler/linker section totals, not measured runtime memory peaks. They exclude runtime stack/heap demand and are specific to the compiler and flags recorded in `evidence/firmware_build/`.
 
