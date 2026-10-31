@@ -1,4 +1,4 @@
-# Design and Evaluation of a Multi-ECU System with Register-Level CAN Communication Based on a Reduced AUTOSAR Classic Architecture
+# Design and Evaluation of a Multi-ECU CAN Communication System at the Register Level Based on a Simplified AUTOSAR Classic Architecture
 
 A three-ECU embedded firmware project comparing a bare-metal implementation with a manually implemented, reduced AUTOSAR Classic-inspired architecture. Both versions implement the same application roles and use register-level STM32 bxCAN drivers.
 
