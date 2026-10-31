@@ -1,0 +1,32 @@
+case,status,parity,expected
+normal,PASS,True,No collision
+threshold_below,PASS,True,No collision
+threshold_above,PASS,True,Collision latches
+negative_impact,PASS,True,Collision latches
+diagonal_above,PASS,True,Collision latches
+diagonal_below,PASS,True,No collision
+z_axis_impact,PASS,True,Collision latches
+latch,PASS,True,Collision latches
+sensor_fault,PASS,True,Sensor fault: nonblocking warning ON
+sensor_recovery,PASS,True,Recovery from sensor read fault
+post_collision_sensor_fault,PASS,True,Collision latches
+tx_busy_retry,PASS,True,Sequence retries on busy
+tx_busy_twice,PASS,True,Sequence preserved after two TX fails
+diag_before_100,PASS,True,No premature diagnostic
+diag_at_100,PASS,True,Diagnostic payload
+diag_repeated,PASS,True,Diagnostic period 100ms
+tx_seq_increment,PASS,True,Monotonic successful TX seq
+tx_seq_wrap,PASS,True,8-bit counter wraps
+heartbeat_latched,PASS,True,Collision latches
+sensor_error_timing,PASS,True,Runtime sensor fault path no longer uses blocking delay
+report_every_10ms,PASS,True,CAN send called every 10ms
+sensor_init_ok,PASS,True,WHOAMI/config init
+sensor_init_bad_id,PASS,True,Reject invalid WHO_AM_I
+mg_conversion,PASS,True,MPU6050 raw conversion/endian checked by executable
+axes_big_endian,PASS,True,MPU6050 raw conversion/endian checked by executable
+fault_pulse_on,PASS,True,0-29ms buzzer ON
+fault_pulse_off,PASS,True,>=30ms buzzer OFF
+fault_pulse_restart,PASS,True,100ms buzzer ON again
+fault_recover_early,PASS,True,Recovery immediate OFF
+crash_after_fault,PASS,True,Crash after transient fault latches
+fault_after_crash,PASS,True,Crash latch priority over fault

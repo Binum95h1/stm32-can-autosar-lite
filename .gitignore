@@ -1,0 +1,35 @@
+# Reproducible compiler and linker outputs
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.su
+*.exe
+*.dll
+*.so
+*.a
+
+# Local build and test output; selected evidence is stored in /evidence
+/benchmark/results/
+**/build/
+**/bin/
+__pycache__/
+*.py[cod]
+
+# Local editor settings, backups and archives
+.vscode/
+.idea/
+*.bak
+*.tmp
+*~
+*.zip
+.DS_Store
+Thumbs.db
+
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example

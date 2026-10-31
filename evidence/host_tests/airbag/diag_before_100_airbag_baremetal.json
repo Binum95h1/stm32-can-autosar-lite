@@ -1,0 +1,32 @@
+{
+  "scenario": "diag_before_100",
+  "time": 90,
+  "buzzer": 0,
+  "buzzer_edges": 0,
+  "reads": 2,
+  "delay_calls": 0,
+  "max_delay": 0,
+  "cfg_writes": 0,
+  "config": 0,
+  "accel_config": 0,
+  "frames": [
+    {
+      "t": 0,
+      "id": 273,
+      "ok": 1,
+      "data": [
+        0,
+        0
+      ]
+    },
+    {
+      "t": 90,
+      "id": 273,
+      "ok": 1,
+      "data": [
+        0,
+        1
+      ]
+    }
+  ]
+}

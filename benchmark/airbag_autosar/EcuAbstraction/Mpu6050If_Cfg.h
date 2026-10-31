@@ -1,0 +1,20 @@
+#ifndef MPU6050IF_CFG_H
+#define MPU6050IF_CFG_H
+#include "Std_Types.h"
+/* GY-521 AD0=GND: 7-bit address 0x68. If AD0=VCC, use 0x69. */
+#define MPU6050_I2C_ADDR        0x68U
+#define MPU6050_WHO_AM_I_REG    0x75U
+#define MPU6050_WHO_AM_I_VALUE  0x68U
+#define MPU6050_PWR_MGMT_1      0x6BU
+#define MPU6050_SMPLRT_DIV      0x19U
+#define MPU6050_CONFIG          0x1AU
+#define MPU6050_ACCEL_CONFIG    0x1CU
+#define MPU6050_ACCEL_XOUT_H    0x3BU
+#define MPU6050_PWR1_WAKE       0x00U
+#define MPU6050_SMPLRT_100HZ   0x09U
+#define MPU6050_DLPF_CFG3      0x03U
+#define MPU6050_ACCEL_FS_8G    0x10U
+/* AFS_SEL=2 (±8g): 4096 LSB/g = 512/125 LSB/mg. */
+#define MPU6050_MG_NUMERATOR   125L
+#define MPU6050_MG_DENOMINATOR 512L
+#endif

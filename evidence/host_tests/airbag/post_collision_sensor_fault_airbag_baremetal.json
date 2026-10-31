@@ -1,0 +1,32 @@
+{
+  "scenario": "post_collision_sensor_fault",
+  "time": 10,
+  "buzzer": 1,
+  "buzzer_edges": 1,
+  "reads": 1,
+  "delay_calls": 0,
+  "max_delay": 0,
+  "cfg_writes": 0,
+  "config": 0,
+  "accel_config": 0,
+  "frames": [
+    {
+      "t": 0,
+      "id": 273,
+      "ok": 1,
+      "data": [
+        1,
+        0
+      ]
+    },
+    {
+      "t": 10,
+      "id": 273,
+      "ok": 1,
+      "data": [
+        1,
+        1
+      ]
+    }
+  ]
+}

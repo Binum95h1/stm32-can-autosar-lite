@@ -1,0 +1,3 @@
+Command: python benchmark/tools/measurement/can_busload_model.py --self-test
+Result: SELF TEST PASS: nominal bit budget and 11-bit arbitration ordering
+Scope: model arithmetic/priority self-check only; no new ECU performance result.

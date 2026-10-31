@@ -1,0 +1,30 @@
+CURRENT MAIN ECU STM32F103C8T6 SOURCE | NATIVE GCC HOST TEST
+SOURCE: $REPO_ROOT\benchmark
+COMPILER: C:\msys64\ucrt64\bin\gcc.exe
+BUILD: main_baremetal
+BUILD: main_autosar
+--------------------------------------------------------------------------------
+SCENARIO                BARE     AUTOSAR  PARITY   RESULT
+normal                  PASS     PASS     True     PASS
+brake                   PASS     PASS     True     PASS
+reverse                 PASS     PASS     True     PASS
+emergency               PASS     PASS     True     PASS
+recovery                PASS     PASS     True     PASS
+abs_rx                  PASS     PASS     True     PASS
+abs_gap                 PASS     PASS     True     PASS
+airbag_gap              PASS     PASS     True     PASS
+ignore_unknown          PASS     PASS     True     PASS
+ignore_short            PASS     PASS     True     PASS
+tx_busy_retry           PASS     PASS     True     PASS
+diagnostic              PASS     PASS     True     PASS
+adc_mask                PASS     PASS     True     PASS
+concurrent_rx           PASS     PASS     True     PASS
+seq_wrap                PASS     PASS     True     PASS
+seq_duplicate           PASS     PASS     True     PASS
+seq_stale               PASS     PASS     True     PASS
+airbag_duplicate        PASS     PASS     True     PASS
+airbag_stale            PASS     PASS     True     PASS
+--------------------------------------------------------------------------------
+SUMMARY: 19/19 PASS | 0 FAIL | Bare-metal vs AUTOSAR-lite parity
+CSV: $REPO_ROOT\benchmark\results\all3_ecu_host_test\main\main_host_results.csv
+NOTE: Host mock test on PC; NOT a physical STM32/CAN timing test.

@@ -1,0 +1,32 @@
+{
+  "scenario": "sensor_recovery",
+  "time": 40,
+  "buzzer": 0,
+  "buzzer_edges": 2,
+  "reads": 2,
+  "delay_calls": 0,
+  "max_delay": 0,
+  "cfg_writes": 0,
+  "config": 0,
+  "accel_config": 0,
+  "frames": [
+    {
+      "t": 0,
+      "id": 273,
+      "ok": 1,
+      "data": [
+        0,
+        0
+      ]
+    },
+    {
+      "t": 40,
+      "id": 273,
+      "ok": 1,
+      "data": [
+        0,
+        1
+      ]
+    }
+  ]
+}

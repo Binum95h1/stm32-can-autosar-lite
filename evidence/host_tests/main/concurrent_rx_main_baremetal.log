@@ -1,0 +1,3 @@
+returncode=0
+concurrent_rx|frames=1|tx=1|next=1|absrx=1|abslost=0|abslast=0|airrx=1|airlost=0|airlast=4|emergency=1|abs1=35|abs2=46|abs3=2|lcd=AIRBAG: SAFE   
+TX:121:5:00:00:01:00:00

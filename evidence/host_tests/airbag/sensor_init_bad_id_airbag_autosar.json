@@ -1,0 +1,13 @@
+{
+  "scenario": "sensor_init_bad_id",
+  "time": 0,
+  "buzzer": 0,
+  "buzzer_edges": 0,
+  "reads": 0,
+  "delay_calls": 0,
+  "max_delay": 0,
+  "cfg_writes": 0,
+  "config": 0,
+  "accel_config": 0,
+  "frames": []
+}

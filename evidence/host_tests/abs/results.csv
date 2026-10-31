@@ -1,0 +1,18 @@
+﻿scenario,requirement,category,bare,autosar,parity,observed
+normal,ADC=0 => STOP,normal,PASS,PASS,PASS,"PWM=0, state=0, W1/W2=[0, 0], TX=10"
+forward,"ADC=4095 => FORWARD, PWM=8000, encoder+",normal,PASS,PASS,PASS,"PWM=8000, state=1, W1/W2=[18, 18], TX=10"
+reverse,Direction=1 => REVERSE,normal,PASS,PASS,PASS,"PWM=7248, state=2, W1/W2=[16, 16], TX=10"
+brake,"Brake=1 => PWM=0, state BRAKE",normal,PASS,PASS,PASS,"PWM=0, state=3, W1/W2=[0, 0], TX=10"
+wrong_id,Reject frame outside CAN ID 0x121,normal,PASS,PASS,PASS,"PWM=0, state=0, W1/W2=[0, 0], TX=10"
+short_dlc,Reject command with DLC<4,normal,PASS,PASS,PASS,"PWM=0, state=0, W1/W2=[0, 0], TX=10"
+deadband,ADC<=10 should be STOP with no direction,requirement,PASS,PASS,PASS,"pwm=0, motor_state=0, direction=[0, 0]"
+feedback_cycle,Feedback should transmit every 10ms,requirement,PASS,PASS,PASS,TX @10ms=1; first feedback @ 10ms
+timeout_boundary,Loss of MAIN command => safe by <=300ms,requirement,PASS,PASS,PASS,PWM @300ms=0; PWM @310ms=0
+recovery,Command after timeout restores run,normal,PASS,PASS,PASS,"PWM=6461, state=1, W1/W2=[15, 15], TX=40"
+encoder,Software motor model produces speed via original encoder algorithm,normal,PASS,PASS,PASS,"PWM=8000, state=1, W1/W2=[18, 18], TX=10"
+diag,0x212 encodes a mocked error-status structure,normal,PASS,PASS,PASS,"0x212 frames=1, BOFF=1 (mocked)"
+sequence_gap,Sequence 0->2 logs 1 missing message,normal,PASS,PASS,PASS,"sequence 0->2, logged lost=1"
+first_seq_nonzero,Starting with sequence 7 counts 7 messages as lost,observation,REVIEW,REVIEW,PASS,"initial sequence=7, logged lost=7 (review expected behavior)"
+tx_failure,CAN Write failure does not advance feedback sequence,normal,PASS,PASS,PASS,"mock failed CAN Write=1, first successful feedback @ 20ms"
+motor_stall,Stalled motor enters FAULT at 500ms,normal,PASS,PASS,PASS,"PWM=0, state=4, W1/W2=[0, 0], TX=50"
+latest_command,Two RX commands before tick: latest command wins,normal,PASS,PASS,PASS,"PWM=0, state=3, W1/W2=[0, 0], TX=10"

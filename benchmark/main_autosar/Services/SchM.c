@@ -1,0 +1,34 @@
+#include "SchM.h"
+
+void SchM_Init(void)
+{
+    /* Manual Classic-like demo: no OS, so exclusive areas are IRQ gates. */
+}
+
+void SchM_Enter_Can_EXCLUSIVE_AREA_0(void)
+{
+#if defined(__arm__) || defined(__thumb__)
+    __asm volatile ("cpsid i" : : : "memory");
+#endif
+}
+
+void SchM_Exit_Can_EXCLUSIVE_AREA_0(void)
+{
+#if defined(__arm__) || defined(__thumb__)
+    __asm volatile ("cpsie i" : : : "memory");
+#endif
+}
+
+void SchM_Enter_CanIf_EXCLUSIVE_AREA_0(void)
+{
+#if defined(__arm__) || defined(__thumb__)
+    __asm volatile ("cpsid i" : : : "memory");
+#endif
+}
+
+void SchM_Exit_CanIf_EXCLUSIVE_AREA_0(void)
+{
+#if defined(__arm__) || defined(__thumb__)
+    __asm volatile ("cpsie i" : : : "memory");
+#endif
+}

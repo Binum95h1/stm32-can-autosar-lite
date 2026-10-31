@@ -1,0 +1,7 @@
+project,status,text_bytes,data_bytes,bss_bytes,flash_text_plus_data_bytes,ram_data_plus_bss_bytes,optimization,log
+main_baremetal,PASS,11036,84,420,11120,504,-O0,evidence/firmware_build/main_baremetal.log
+main_autosar,PASS,12803,84,436,12887,520,-O0,evidence/firmware_build/main_autosar.log
+abs_baremetal,PASS,11580,84,1836,11664,1920,-O0,evidence/firmware_build/abs_baremetal.log
+abs_autosar,PASS,12916,84,1852,13000,1936,-O0,evidence/firmware_build/abs_autosar.log
+airbag_baremetal,PASS,9158,88,260,9246,348,-O0,evidence/firmware_build/airbag_baremetal.log
+airbag_autosar,PASS,10151,88,280,10239,368,-O0,evidence/firmware_build/airbag_autosar.log

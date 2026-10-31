@@ -1,0 +1,47 @@
+{
+  "scenario": "diag_at_100",
+  "time": 100,
+  "buzzer": 0,
+  "buzzer_edges": 0,
+  "reads": 2,
+  "delay_calls": 0,
+  "max_delay": 0,
+  "cfg_writes": 0,
+  "config": 0,
+  "accel_config": 0,
+  "frames": [
+    {
+      "t": 0,
+      "id": 273,
+      "ok": 1,
+      "data": [
+        0,
+        0
+      ]
+    },
+    {
+      "t": 100,
+      "id": 273,
+      "ok": 1,
+      "data": [
+        0,
+        1
+      ]
+    },
+    {
+      "t": 100,
+      "id": 531,
+      "ok": 1,
+      "data": [
+        2,
+        3,
+        4,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

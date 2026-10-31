@@ -1,0 +1,5 @@
+#ifndef BARECAN_CFG_H
+#define BARECAN_CFG_H
+#define CAN_ID_AIRBAG_TO_MAIN 0x111U
+#define CAN_ID_CAN_DIAG_STATUS 0x213U
+#endif

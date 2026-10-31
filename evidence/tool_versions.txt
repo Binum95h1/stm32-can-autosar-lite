@@ -1,0 +1,3 @@
+Python: Python 3.12.14
+ARM GCC: arm-none-eabi-gcc.exe (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 15.3.1 20260627
+Native GCC: gcc.exe (Rev13, Built by MSYS2 project) 15.2.0

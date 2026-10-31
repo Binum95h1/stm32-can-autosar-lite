@@ -1,0 +1,4 @@
+returncode=0
+seq_stale|frames=2|tx=2|next=2|absrx=2|abslost=0|abslast=10|airrx=0|airlost=0|airlast=0|emergency=0|abs1=20|abs2=30|abs3=1|lcd=AIRBAG: SAFE   
+TX:121:5:00:00:00:00:00
+TX:121:5:00:00:00:00:01

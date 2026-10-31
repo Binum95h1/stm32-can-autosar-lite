@@ -1,0 +1,32 @@
+#include "MainNodeS_Internal.h"
+
+uint16 adc_val = 0U;
+uint8 sw1 = 0U;
+uint8 sw2 = 0U;
+uint8 dir_sw = 0U;
+uint8 abs1 = 0U;
+uint8 abs2 = 0U;
+uint8 abs3 = 0U;
+uint8 airbag1 = 0U;
+uint8 airbag2 = 0U;
+uint8 airbag3 = 0U;
+volatile uint8 abs_new_data = 0U;
+volatile uint8 airbag_new_data = 0U;
+volatile uint8 emergency_stop = 0U;
+uint32 main_to_abs_tx_count = 0U;
+uint8 main_to_abs_seq = 0U;
+uint32 main_abs_rx_count = 0U;
+uint32 main_abs_lost_count = 0U;
+uint8 main_abs_last_seq = 0U;
+uint8 main_abs_seq_valid = 0U;
+uint32 main_airbag_rx_count = 0U;
+uint32 main_airbag_lost_count = 0U;
+uint8 main_airbag_last_seq = 0U;
+uint8 main_airbag_seq_valid = 0U;
+char lcd_row0[LCD_BUF_LEN];
+char lcd_row1[LCD_BUF_LEN];
+uint8 blink_state = 0U;
+uint8 speed_left_cmps = 0U;
+uint8 speed_right_cmps = 0U;
+uint8 speed_avg_cmps = 0U;
+uint8 speed_display = 0U;
