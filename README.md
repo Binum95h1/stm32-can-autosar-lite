@@ -65,8 +65,8 @@ benchmark/
   main_autosar/          Main ECU, AUTOSAR-lite
   abs_baremetal/         ABS ECU, bare-metal
   abs_autosar/           ABS ECU, AUTOSAR-lite
-  airbag_baremetal/      Airbag ECU with MPU6050, bare-metal
-  airbag_autosar/        Airbag ECU with MPU6050, AUTOSAR-lite
+  airbag_baremetal/      Airbag ECU, bare-metal
+  airbag_autosar/        Airbag ECU, AUTOSAR-lite
   tools/
     all3_ecu_host_test/  Current-source native C regression tests
     measurement/        CAN traffic model and UART measurement-log parser
